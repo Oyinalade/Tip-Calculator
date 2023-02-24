@@ -1,0 +1,140 @@
+* {
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+}
+body {
+  background: hsl(185, 41%, 84%);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cal-card {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+.head-cal {
+  background: hsl(183, 100%, 15%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 300px;
+}
+.tip-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.tip {
+  background: hsl(183, 100%, 15%);
+  width: 60px;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  padding: 7px;
+  border-radius: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.active {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+#custombox {
+  background: hsl(189, 41%, 97%);
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  text-align: end;
+  width: 60px;
+  padding: 7px;
+  height: 19px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-block-start: 1.5em;
+}
+#custombox:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+input {
+  background: hsl(189, 41%, 97%);
+  border: none;
+  outline: none;
+  width: 290px;
+  text-align: end;
+  font-size: 20px;
+  /* height: 30px; */
+}
+.input-bod {
+  display: flex;
+  height: 30px;
+  padding: 10px;
+  width: 300px;
+  background: hsl(189, 41%, 97%);
+  cursor: pointer;
+}
+.input-bod:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.head-cal-title {
+  margin-inline-end: 3em;
+  color: hsl(0, 0%, 100%);
+}
+.head-cal-title span {
+  opacity: 0.5;
+}
+.head-cal-amount {
+  color: hsl(172, 67%, 45%);
+  font-size: 2em;
+}
+.reset {
+  background: hsl(172, 67%, 45%);
+  text-align: center;
+  padding: 10px;
+  border-radius: 7px;
+  opacity: 0.3;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 140px;
+}
+.reset:hover {
+  opacity: 1;
+}
+.number {
+  display: flex;
+  justify-content: space-between;
+}
+.hidden {
+  margin-block-start: 1.3em;
+  color: red;
+  display: none;
+}
+@media (max-width: 500px) {
+  .cal-card {
+    flex-direction: column;
+  }
+  .head-cal {
+    margin-top: 20px;
+    margin-inline-start: 0;
+  }
+  .reset {
+    margin-top: 0;
+  }
+}
